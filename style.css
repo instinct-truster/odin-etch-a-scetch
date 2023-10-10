@@ -7,6 +7,10 @@
   background: rgb(224, 160, 40);
 }
 
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .board {
   width: 80%;
   height: 80%;
@@ -45,19 +49,22 @@
 .buttons {
   margin-top: 10px;
   margin-bottom: 10px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 button {
   padding: 0.3em 1.2em;
   margin: 0 0.3em 0.3em 0;
   border-radius: 2em;
+  border: rgb(238, 226, 180) solid 2px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 300;
   text-align: center;
   transition: all 0.3s;
 }
 
-.button:hover {
+button:hover {
   cursor: pointer;
 }
 
@@ -67,13 +74,23 @@ button {
 }
 
 .blackButton:hover {
-  background-color: rgb(64, 63, 63);
+  background-color: rgb(92, 84, 84);
   color: rgb(255, 255, 255);
+}
+
+.eraserButton {
+  background-color: hotpink;
+  color: white;
+}
+
+.eraserButton:hover {
+  background-color: rgb(231, 185, 179);
+  color: hotpink;
 }
 
 .grayButton {
   background-color: rgb(128, 128, 128);
-  color: black;
+  color: white;
 }
 
 .grayButton:hover {
@@ -81,9 +98,34 @@ button {
   color: white;
 }
 
+.randomButton {
+  background-color: rgb(255, 128, 0);
+  color: white;
+}
+
+.randomButton:hover {
+  background-image: linear-gradient(to right, yellow, red, green);
+}
+
+.clearGridButton {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSACqwx8fl8bdpPpHRpIqGUd7S0rk9iNgSFJw&usqp=CAU);
+  background-position: center;
+  background-size: cover;
+  color: rgb(51, 55, 60);
+}
+
 .mode {
   margin-bottom: 10px;
   color: white;
+}
+
+input {
+  padding: 5px;
+  border-radius: 15px;
+  border: rgb(238, 226, 180) solid 2px;
+  max-width: 50px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .error {

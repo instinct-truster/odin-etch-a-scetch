@@ -22,17 +22,19 @@
           </button>
           <button class="grayButton" onclick="changeColor('gray')">Gray</button>
           <button class="randomButton" onclick="changeColor('random')">
-            Random
+            * ??? *
           </button>
-          <button onclick="resetBoard()">Reset</button>
+          <button class="clearGridButton" onclick="resetBoard()">
+            Clear Grid
+          </button>
         </div>
         <div>
+          <button>Set Grid Size:</button>
           <input
             type="text"
             placeholder="Size of Board"
             value="16"
             onchange="changeSize(this.value)" />
-          <button>Set Grid Size</button>
         </div>
         <div class="error">Input must be between 2 and 100</div>
       </div>
